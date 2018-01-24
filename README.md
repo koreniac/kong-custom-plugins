@@ -35,7 +35,7 @@ New Parameter | Default | Description
 - Download.
 
 ```
-git clone https://git.chaomy.com/api-service/kong-custom-plugins.git
+git clone git@github.com:LonelyOrion/kong-custom-plugins.git
 ```
 
 - Install each plugin.
@@ -50,7 +50,7 @@ $ cd ../kong-plugin-custom-rate-limit/
 $ luarocks make
 ```
 
-- Enable the plugins in your conf. [example](https://git.chaomy.com/JieZhou/apigateway-configure/blob/master/kong.conf)
+- Enable the plugins in your conf. 
 
 ```
 export KONG_CUSTOM_PLUGIN=req-uuid,custom-jwt,custom-rate-limit
@@ -69,7 +69,7 @@ $ (sudo) kong migrations up -c kong.conf
 $ (sudo) kong start -c kong.conf
 ```
 
-- Use it in your api. [example](https://git.chaomy.com/JieZhou/apigateway-configure/blob/master/configure.sh)
+- Use it in your api. 
 
 
 ## Known issues
